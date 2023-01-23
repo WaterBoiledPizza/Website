@@ -13,7 +13,7 @@
 					:label="t('emote_set.create')"
 					appearance="raised"
 					color="primary"
-					fa-icon="hexagon-plus"
+					fa-icon="square-plus"
 					selector="emote-set-create"
 					@click="createEmoteSet"
 				/>

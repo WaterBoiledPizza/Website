@@ -114,7 +114,7 @@
 				<div class="create-button-wrapper">
 					<div class="create-button">
 						<Button
-							fa-icon="hexagon-plus"
+							fa-icon="square-plus"
 							:label="t('emote.add').toUpperCase()"
 							color="accent"
 							use-route="/emotes/create"

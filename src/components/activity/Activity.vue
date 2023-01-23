@@ -260,7 +260,7 @@ const getChangeStrings = (): DescribeChange[] => {
 						for (const v of c.array_value.added) {
 							result.push({
 								name: "emote_set_emote_added",
-								icon: "hexagon-plus",
+								icon: "square-plus",
 								variables: { T: props.target, AE: v },
 							});
 

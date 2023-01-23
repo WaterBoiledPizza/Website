@@ -16,7 +16,7 @@
 				<Icon class="lock-icon" icon="lock" />
 			</div>
 			<div class="role-selectable create-role-btn" @click="createRole">
-				<Icon icon="hexagon-plus" />
+				<Icon icon="square-plus" />
 				<span>Create Role</span>
 			</div>
 		</div>

@@ -7,7 +7,7 @@
 			v-tooltip="t('nav.theme', [t('nav.theme_light')])"
 			v-tooltip:position="'bottom'"
 			class="unselectable"
-			icon="sun-bright"
+			icon="sun"
 			@click="() => changeTheme('light')"
 		/>
 		<Icon

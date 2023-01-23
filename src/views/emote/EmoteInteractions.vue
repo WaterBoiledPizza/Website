@@ -26,7 +26,7 @@
 					@click="setEmote(defaultEmoteSet?.id, hasEmote ? 'REMOVE' : hasOtherVersion ? 'SWITCH' : 'ADD')"
 				>
 					<span class="action-icon">
-						<Icon size="lg" :icon="hasEmote ? 'minus' : 'hexagon-plus'" />
+						<Icon size="lg" :icon="hasEmote ? 'minus' : 'square-plus'" />
 					</span>
 					<span v-if="slotsFull && !hasEmote && !hasOtherVersion">
 						{{ t("emote_set.no_space").toUpperCase() }}
