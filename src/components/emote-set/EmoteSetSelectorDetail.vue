@@ -39,7 +39,7 @@
 				selector="default-set-button"
 				@click.stop="actor.setDefaultEmoteSetID(setData.id)"
 			>
-				<Icon size="lg" icon="bullseye-pointer" />
+				<Icon size="lg" icon="crosshairs" />
 			</div>
 
 			<div

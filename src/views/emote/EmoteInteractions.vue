@@ -153,7 +153,7 @@
 				<!-- BUTTON: MORE -->
 				<div v-wave class="action-button" name="more" @click="moreButtons = !moreButtons">
 					<span class="action-icon">
-						<Icon size="lg" :icon="moreButtons ? 'chevrons-right' : 'ellipsis-v'" />
+						<Icon size="lg" :icon="moreButtons ? 'angles-right' : 'ellipsis-v'" />
 					</span>
 					<span>
 						{{ (moreButtons ? t("common.back") : t("common.more")).toUpperCase() }}

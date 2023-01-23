@@ -4,7 +4,7 @@
 
 	<span v-if="announcement && announcement.value" class="global-announcement">
 		<div>
-			<Icon size="xl" icon="megaphone" />
+			<Icon size="xl" icon="bullhorn" />
 			<span>{{ announcement.value }}</span>
 		</div>
 	</span>

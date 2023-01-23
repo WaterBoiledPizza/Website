@@ -13,12 +13,19 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faObjectUngroup, faCircleCheck as farCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import {
+	faAnglesDown,
+	faAnglesRight,
 	faArrowLeft,
 	faBars,
+	faBook,
 	faBox,
 	faBrush,
+	faBullhorn,
 	faBullseye,
+	faCakeCandles,
 	faCalendarAlt,
+	faCalendarDays,
+	faCertificate,
 	faCheck,
 	faCheckCircle,
 	faCheckDouble,
@@ -26,11 +33,14 @@ import {
 	faChevronLeft,
 	faChevronRight,
 	faCircle,
+	faCircleQuestion,
+	faClapperboard,
 	faClock,
 	faCodeBranch,
 	faColumns,
 	faCopy,
 	faCreditCard,
+	faCrosshairs,
 	faCube,
 	faDownload,
 	faEllipsisH,
@@ -41,6 +51,8 @@ import {
 	faExternalLinkAlt,
 	faEye,
 	faEyeSlash,
+	faFaceGrinStars,
+	faFilm,
 	faFilter,
 	faFire,
 	faFlag,
@@ -58,6 +70,7 @@ import {
 	faObjectGroup,
 	faPalette,
 	faPen,
+	faPenToSquare,
 	faPlus,
 	faReply,
 	faRotateRight,
@@ -66,12 +79,15 @@ import {
 	faSlash,
 	faSmile,
 	faSquare,
+	faSquarePlus,
 	faStar,
+	faSun,
 	faSync,
 	faTag,
 	faTicket,
 	faTimes,
 	faTrash,
+	faTree,
 	faTrophy,
 	faUndo,
 	faUnlock,
@@ -84,27 +100,25 @@ import {
 	faUserSlash,
 	faUsersCog,
 	faWrench,
-	faSun,
-	faSquarePlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 // import{
-// 	faBookSparkles,
-// 	faBullseyePointer,
-// 	faCakeSlice,
-// 	faChevronsDown,
-// 	faChevronsRight,
-// 	faFaceSunglasses,
-// 	faHexagonPlus,
-// 	faMegaphone,
-// 	faPenField,
-// 	faRectangleWide,
-// 	faSeal,
-// 	faSquareQuestion,
-// 	faSunBright,
-// 	faTimer,
-// 	faTreeChristmas,
-// 	faWaveformLines,
+// 	faBookSparkles, -> faBook
+// 	faBullseyePointer, -> faCrosshairs
+// 	faCakeSlice, -> faCakeCandles
+// 	faChevronsDown, -> faAnglesDown
+// 	faChevronsRight, -> faAnglesRight
+// 	faFaceSunglasses, -> faFaceGrinStars
+// 	faHexagonPlus, 	-> faSquarePlus
+// 	faMegaphone, -> faBullhorn
+// 	faPenField, -> faPenToSquare
+// 	faRectangleWide, -> faClapperboard
+// 	faSeal, -> faCertificate
+// 	faSquareQuestion, -> faCircleQuestion
+// 	faSunBright, -> faSun
+// 	faTimer, -> faCalendarDays
+// 	faTreeChristmas, -> faTree
+// 	faWaveformLines, -> faFilm
 // } from "@fortawesome/sharp-solid-svg-icons";
 
 library.add(
@@ -193,6 +207,21 @@ library.add(
 	faUsersCog,
 	faUserSlash,
 	faWrench,
+
 	faSun,
 	faSquarePlus,
+	faBook,
+	faCrosshairs,
+	faCakeCandles,
+	faAnglesDown,
+	faAnglesRight,
+	faFaceGrinStars,
+	faBullhorn,
+	faPenToSquare,
+	faClapperboard,
+	faCertificate,
+	faCircleQuestion,
+	faCalendarDays,
+	faTree,
+	faFilm,
 );

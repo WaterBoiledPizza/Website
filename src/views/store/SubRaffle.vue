@@ -5,7 +5,7 @@
 			<Icon
 				v-tooltip="t('store.sub.raffle.starts_at_hint', [formattedDate])"
 				v-tooltip:position="'top'"
-				icon="square-question"
+				icon="circle-question"
 			/>
 		</p>
 

@@ -31,11 +31,11 @@
 						{{ t("store.sub.state_badge_progress_filled", [nextBadge.name]) }}
 					</p>
 					<p>
-						<Icon icon="timer" />
+						<Icon icon="calendar-days" />
 						{{ t("store.sub.state_age", [egv.subscription.age], egv.subscription.age) }}
 					</p>
 					<p v-if="egv.subscription.renew" selector="renew-date">
-						<Icon size="lg" icon="cake-slice" />
+						<Icon size="lg" icon="cake-candles" />
 						{{ t("store.sub.state_anniversary", [daysRemaining], daysRemaining) }}
 					</p>
 					<span v-else selector="renew-date">
