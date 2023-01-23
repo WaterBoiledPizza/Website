@@ -55,7 +55,7 @@ const features = {
 	t2: [
 		{ name: "feature_t2_animated_profile_banner", icon: "clapperboard", indev: true },
 		{ name: "feature_t2_animated_offline_screen", icon: "film", indev: true },
-		{ name: "feature_t2_custom_chat_theme", icon: "book", indev: true },
+		{ name: "feature_t2_custom_chat_theme", icon: "users-gear", indev: true },
 		{ name: "feature_t2_extended_sub_emotes", icon: "face-grin-stars", indev: true },
 		{},
 		{},

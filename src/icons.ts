@@ -17,7 +17,6 @@ import {
 	faAnglesRight,
 	faArrowLeft,
 	faBars,
-	faBook,
 	faBox,
 	faBrush,
 	faBullhorn,
@@ -99,11 +98,12 @@ import {
 	faUserPlus,
 	faUserSlash,
 	faUsersCog,
+	faUsersGear,
 	faWrench,
 } from "@fortawesome/free-solid-svg-icons";
 
 // import{
-// 	faBookSparkles, -> faBook
+// 	faBookSparkles, -> faUsersGear
 // 	faBullseyePointer, -> faCrosshairs
 // 	faCakeSlice, -> faCakeCandles
 // 	faChevronsDown, -> faAnglesDown
@@ -210,7 +210,7 @@ library.add(
 
 	faSun,
 	faSquarePlus,
-	faBook,
+	faUsersGear,
 	faCrosshairs,
 	faCakeCandles,
 	faAnglesDown,
