@@ -33,16 +33,16 @@
 			justify-content: space-between;
 
 			@include themify() {
-				.file-upload {
+				> .image-upload > span > .parent-emote {
+					background-color: darken(themed("backgroundColor"), 2);
+				}
+				> .image-upload > .file-upload {
 					background-color: darken(themed("backgroundColor"), 2);
 					&[dragOver="true"] {
 						background-color: transparentize(darken(themed("accent"), 8), 0.75);
 					}
 				}
-				> .image-upload > span > .parent-emote {
-					background-color: darken(themed("backgroundColor"), 2);
-				}
-				.formats-viewer {
+				> .image-upload > div > .formats-viewer {
 					background-color: transparentize(lighten(themed("backgroundColor"), 4), 0.25);
 				}
 			}
@@ -87,9 +87,9 @@
 						}
 					}
 
-					// > h3 {
-					// 	padding-top: 3.5rem;
-					// }
+					> h3 {
+						padding-top: 3.5rem;
+					}
 
 					> a.acceptable-format-list {
 						cursor: pointer;
@@ -102,27 +102,26 @@
 						}
 					}
 
-					> .requirements {
-						font-size: 0.725rem;
-						margin-left: 4rem;
+					.requirements {
+						font-size: 0.7rem;
+						margin-left: 2rem;
 						margin-right: auto;
 						padding-bottom: 0.5rem;
-						width: 18rem;
+						width: 350px;
 
 						> h3 {
-							padding-top: 1rem;
+							padding-top: 2rem;
 							font-size: 1rem;
 							padding-bottom: 0.25rem;
 						}
 
 						> p {
-							font-size: 0.9rem;
+							font-size: 0.8rem;
 						}
 					}
 
 					> .formats-viewer {
-						top: 0;
-						position: relative;
+						position: absolute;
 						width: 20em;
 						display: flex;
 						flex-direction: column;
@@ -130,6 +129,7 @@
 						padding: 0.5em;
 						padding-left: 1em;
 						padding-right: 1em;
+						backdrop-filter: blur(4px);
 
 						.format {
 							display: flex;

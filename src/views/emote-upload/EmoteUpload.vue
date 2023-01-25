@@ -45,7 +45,19 @@
 							<img ref="previewImage" />
 						</label>
 					</div>
-
+					<div>
+						<div class="requirements">
+							<h3>Up to:</h3>
+							<p>- 7 MB large</p>
+							<p>- 1000 x 1000 pixels big</p>
+							<p>- 1000 frames</p>
+							<p>- 50 fps</p>
+						</div>
+						<div class="requirements">
+							*Max width is 384 px and max height is 128 px after processing. Image will be scaled down
+							according to the aspect ratio.
+						</div>
+					</div>
 					<span>
 						<div v-if="parentEmote" class="parent-emote">
 							<img :src="getImage(parentEmote.host, ImageFormat.WEBP, 2)?.url" />
@@ -57,8 +69,14 @@
 						</div>
 					</span>
 				</div>
-				<div class="image-upload form-grid-item">
-					<div>
+				<div class="image-upload">
+					<div
+						:dragOver="dragOver"
+						@drop.prevent="onDropFile"
+						@dragover.prevent
+						@dragenter="dragOver = true"
+						@dragleave="dragOver = false"
+					>
 						<!-- Formats Viewer -->
 						<div class="formats-viewer">
 							<div class="format" categories>
@@ -84,17 +102,6 @@
 									<Icon v-else icon="times" color="red" />
 								</div>
 							</div>
-						</div>
-						<div class="requirements">
-							<h3>Up to:</h3>
-							<p>- 7 MB large</p>
-							<p>- 1000 x 1000 pixels big</p>
-							<p>- 1000 frames</p>
-							<p>- 50 fps</p>
-						</div>
-						<div class="requirements">
-							* Emote will be scaled to a max height of 128 px and/or a max width of 384 px, preserving
-							the aspect ratio.
 						</div>
 					</div>
 					<span />
