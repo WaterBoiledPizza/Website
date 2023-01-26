@@ -30,34 +30,37 @@
 
 				<!-- Image Upload -->
 				<div class="image-upload form-grid-item">
-					<div
-						:dragOver="dragOver"
-						class="file-upload"
-						@drop.prevent="onDropFile"
-						@dragover.prevent
-						@dragenter="dragOver = true"
-						@dragleave="dragOver = false"
-					>
-						<h3>{{ t("emote.upload.image_upload") }}</h3>
-
-						<input id="file-upload" hidden type="file" :accept="mimeList" @change="onFileInputChange" />
-						<label for="file-upload">
-							<img ref="previewImage" />
-						</label>
-					</div>
 					<div>
-						<div class="requirements">
-							<h3>Up to:</h3>
-							<p>- 7 MB large</p>
-							<p>- 1000 x 1000 pixels big</p>
-							<p>- 1000 frames</p>
-							<p>- 50 fps</p>
+						<div
+							class="file-upload"
+							:dragOver="dragOver"
+							@drop.prevent="onDropFile"
+							@dragover.prevent
+							@dragenter="dragOver = true"
+							@dragleave="dragOver = false"
+						>
+							<h3>{{ t("emote.upload.image_upload") }}</h3>
+
+							<input id="file-upload" hidden type="file" :accept="mimeList" @change="onFileInputChange" />
+							<label for="file-upload">
+								<img ref="previewImage" />
+							</label>
 						</div>
-						<div class="requirements">
-							*Max width is 384 px and max height is 128 px after processing. Image will be scaled down
-							according to the aspect ratio.
+						<div>
+							<div class="requirements">
+								<h3>Up to:</h3>
+								<p>- 7 MB large</p>
+								<p>- 1000 x 1000 pixels big</p>
+								<p>- 1000 frames</p>
+								<p>- 50 fps</p>
+							</div>
+							<div class="requirements">
+								*Max width is 384 px and max height is 128 px after processing. Image will be scaled
+								down according to the aspect ratio.
+							</div>
 						</div>
 					</div>
+
 					<span>
 						<div v-if="parentEmote" class="parent-emote">
 							<img :src="getImage(parentEmote.host, ImageFormat.WEBP, 2)?.url" />
@@ -70,13 +73,7 @@
 					</span>
 				</div>
 				<div class="image-upload">
-					<div
-						:dragOver="dragOver"
-						@drop.prevent="onDropFile"
-						@dragover.prevent
-						@dragenter="dragOver = true"
-						@dragleave="dragOver = false"
-					>
+					<div>
 						<!-- Formats Viewer -->
 						<div class="formats-viewer">
 							<div class="format" categories>
